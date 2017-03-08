@@ -8,3 +8,10 @@ script:
   - cd docs
   - make html
   - cd ..
+  - set -e
+  - # Command to build your docs
+  - pip install doctr
+  - doctr deploy
+env:
+    global:
+        - secure: "GZX6cYD0Oq7p9rR3ED3UNIR9/O5CweeNZctbLTHeLE0vc2XvHTMlxifa34HCc3nyB8U/EHoHz67GdaoYnPBZkLYndWSb/g7P20qS2gllMPPW9VLDhz6Ez7APE3EtBO1JvtQavFOIXo89JEzF4QOwWEffVJdurG75KTAcs0q6wwcBIcbD5JHb7f7U8w/Sf4gBE716YEBvQsDF9+XkI9ZeGUvQG1lAyEbiXiixldSKjiLX8QCHx2A9fqRrDNXERorocszs0IZM9/E9pbxdIB7SUReOOiZNXTFg4wyGLC/PXiA7VyYQLwieRndHVIKcqFpUYMfMq79uoqGQMZL7lhYdoOL6e4OuKDXyXDq2Xi4x/qWU1xrwLSxiv5kSgKYA1yDXWQs7Nq+lGgQwLzJqEBrpxFU7f+SWyL/Md2kg59fBsOA+P8mJFIE6mEbekB0BQsa6V2/SvEhjy3zIrAfBq1yHiUoTxqHN5xgckSvBg99wZya2pdH8HbY+nhA1fbKsKFsqXunRyIMLiF9IRHxF9LUnz7OZTWpITZkiz7zz4yCKQbVJdV+pCoH+iRGjXZN4bhvDD5R0pzAq4Xvjfr7HkQEKBgJdcrzeQvd9WldPBMc/z4QA6Gse95hT3ii+t6GIjbYXswIldcoq+ihnGjzAsDDnzM3vKi6oB651jHBaqwqDvdE="
